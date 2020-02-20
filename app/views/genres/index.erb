@@ -1,0 +1,14 @@
+<h1>Genres Index</h1>
+<a href="/">Home</a>
+<ul>
+  <% @genres.each do |genre| %>
+  <li>
+    <a href="/genres/<%=genre.id%>">
+      <%= genre.name %>
+    </a>
+  </li>
+  <%end%>
+</ul>
+<a href="/genres/new">Add New</a><br>
+<a href="/artists">Artists</a><br>
+<a href="/songs">Songs</a>

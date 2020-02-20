@@ -1,4 +1,6 @@
 class LibraryParser
+
+  ## Action Bronson - Larry Csonka [indie].mp3
   def files
     data_path = File.join(File.dirname(__FILE__), '..', 'db', 'data')
     Dir.entries(data_path)[2..-1]
